@@ -1,0 +1,122 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Verdana', sans-serif;
+  background: linear-gradient(to bottom right, #ac8fbd, #7e0ea7);
+}
+.container {
+  max-width: 1200px;
+  margin: 30px auto;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+.box, .contact-form {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+}
+/* To-Do List Styles */
+h1 {
+  text-align: center;
+  color: #6a0a77;
+  margin-bottom: 20px;
+}
+.task-bar {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.task-bar input {
+  flex: 1;
+  padding: 10px;
+  border: 2px solid #452a5a;
+  border-radius: 8px;
+  font-size: 16px;
+}
+.task-bar button {
+  padding: 10px 20px;
+  background-color: #7632ce;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+.task-bar button:hover {
+  background-color: #37137a;
+}
+ul {
+  list-style: none;
+  padding: 0;
+  max-height: 250px;
+  overflow-y: auto;
+}
+li {
+  background-color: #eccef0;
+  padding: 12px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.2s;
+}
+li.completed {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+li .delete-btn {
+  background: none;
+  color: rgb(58, 6, 78);
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: bold;
+}
+/* Contact Form Styles */
+.contact-form h2 {
+  text-align: center;
+  color: #440c64;
+  margin-bottom: 20px;
+}
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+.form-grid label {
+  font-weight: bold;
+  padding-top: 10px;
+}
+.form-grid input,
+.form-grid textarea {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #14001b;
+  width: 100%;
+  font-size: 15px;
+}
+.contact-form button {
+  display: block;
+  margin: 0 auto;
+  background-color: #7632ce;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.contact-form button:hover {
+  background-color: #37137a;
+}
+/* Responsive for mobile */
+@media (max-width: 768px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+}
